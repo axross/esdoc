@@ -42,7 +42,7 @@ export default function publish(values, asts, config) {
   let _coverage = null;
 
   function log(text) {
-    console.log(text);
+    if (!config.noLog) console.log(text);
   }
 
   function writeHTML(html, fileName) {
